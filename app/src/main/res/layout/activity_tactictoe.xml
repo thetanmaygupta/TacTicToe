@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tactictoe"
+    android:orientation="vertical"
+    android:background="#00203F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPlayerX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player X:"
+                android:textSize="24sp"
+                android:fontFamily="@font/kanit_semibold"
+                android:textColor="#F50057"/>
+
+            <TextView
+                android:id="@+id/tvPlayerXPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:fontFamily="@font/kanit_semibold"
+                android:textColor="#F50057"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvPlayerO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player O:"
+                android:textSize="24sp"
+                android:fontFamily="@font/kanit_semibold"
+                android:textColor="#F50057"/>
+
+            <TextView
+                android:id="@+id/tvPlayerOPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:fontFamily="@font/kanit_semibold"
+                android:textColor="#F50057"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn: Player X"
+        android:textSize="24sp"
+        android:fontFamily="@font/kanit_semibold"
+        android:textColor="#F50057"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:fontFamily="@font/kanit_bold"
+            app:elevation="5dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="10sp"
+            android:padding="16dp"
+            android:textColor="#00203F"
+            android:backgroundTint="#F50057"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlayAgain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Play Again"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:elevation="3dp"
+            app:cornerRadius="12dp"
+            android:fontFamily="@font/kanit_semibold"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#F50057"
+            android:textColor="#00203F"
+            android:layout_margin="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:elevation="3dp"
+            app:cornerRadius="12dp"
+            android:fontFamily="@font/kanit_semibold"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#F50057"
+            android:textColor="#00203F"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Player X Won"
+        android:textSize="30sp"
+        android:fontFamily="@font/kanit_bold"
+        android:textColor="#F50057"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
