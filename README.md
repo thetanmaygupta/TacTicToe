@@ -1,4 +1,4 @@
-<h1 align="center"> Tac Tio Toe </h1>
+<h1 align="center"> Tac Tic Toe </h1>
 
 <h1 align="center"> Opening Animation/Splash Of The App!! </h1>
 <p align="center"> <img src = https://user-images.githubusercontent.com/29389563/121767675-5dca0700-cb77-11eb-8dcf-733f19f4a7ed.png width="350" /> </p>
