@@ -24,12 +24,13 @@
         style="@android:style/Widget.TextView"
         android:layout_width="430dp"
         android:layout_height="171dp"
-        android:layout_marginTop="60dp"
-        android:fontFamily="@font/kanit_bold"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bangers"
+        android:padding="10dp"
         android:text="Twayne Games"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="60sp"
+        android:textSize="65dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,17 +39,18 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="333dp"
+        android:layout_width="330dp"
         android:layout_height="45dp"
-        android:fontFamily="@font/kanit_bold"
-        android:text="Made By Tanmay With ❤️"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:text="Made By Tanmay With ❤"
         android:textColor="#000000"
-        android:textSize="25sp"
+        android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.863" />
+        app:layout_constraintVertical_bias="0.927" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

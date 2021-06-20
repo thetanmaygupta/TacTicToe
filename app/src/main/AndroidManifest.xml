@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TacTicToe">
+        <activity android:name=".MainActivity3"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.loading" />
+
+                <category android:name="android.intent.category.loading" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".tactictoe"
             android:screenOrientation="portrait">
